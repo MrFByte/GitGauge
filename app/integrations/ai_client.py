@@ -148,7 +148,7 @@ Respond ONLY with valid JSON, no additional text.
         try:
             # Use Groq with a current model
             response = self.client.chat.completions.create(
-                model="llama-3.1-8b-instant",  # Current Groq model
+                model=settings.AI_MODEL,
                 messages=[
                     {
                         "role": "system",
